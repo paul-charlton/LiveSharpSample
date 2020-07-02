@@ -17,10 +17,10 @@ namespace LiveSharpSample.Views
 
             this.WhenActivated(disposables =>
             {
-                this.OneWayBind(ViewModel, x => x.Title, x => x._label1.Text, x => $"prefix {x}")
+                this.OneWayBind(ViewModel, x => x.ReactiveBound1, x => x._label1.Text, x => $"prefix {x}")
                     .DisposeWith(disposables);
 
-                this.OneWayBind(ViewModel, x => x.Description, x => x._label2.Text, x => $"{x} suffix")
+                this.OneWayBind(ViewModel, x => x.ReactiveBound2, x => x._label2.Text, x => $"{x} suffix")
                     .DisposeWith(disposables);
             });
         }

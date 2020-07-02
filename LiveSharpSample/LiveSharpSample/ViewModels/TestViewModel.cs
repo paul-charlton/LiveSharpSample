@@ -13,11 +13,15 @@ namespace LiveSharpSample.ViewModels
     {
         public ViewModelActivator Activator { get; } = new ViewModelActivator();
 
-        public string Description { get; set; } = "Description";
-
         public IScreen HostScreen { get; }
 
-        public string Title { get; set; } = "Title";
+        public string NormalBound1 { get; set; } = "NormalBound1";
+
+        public string NormalBound2 { get; set; } = "NormalBound2";
+
+        public string ReactiveBound1 { get; set; } = "ReactiveBound1";
+
+        public string ReactiveBound2 { get; set; } = "ReactiveBound2";
 
         public string UrlPathSegment { get; }
     }

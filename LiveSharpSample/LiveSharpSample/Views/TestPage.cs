@@ -20,9 +20,19 @@ namespace LiveSharpSample.Views
                 {
                     new Label()
                         .Assign(out _label1),
-
+                     
                     new Label()
                         .Assign(out _label2),
+
+                    new Label()
+                        .Bind(Label.TextProperty, nameof(TestViewModel.NormalBound1)),
+
+                    new Label()
+                        .Bind(Label.TextProperty, nameof(TestViewModel.NormalBound2)),
+
+                    new Label{Text = "Static1" },
+
+                    new Label{Text = "Static2" },
                 }
             };
         }

@@ -9,6 +9,8 @@ namespace LiveSharpSample
     {
         public App()
         {
+            Device.SetFlags(new string[] { "Markup_Experimental" });
+
             InitializeComponent();
 
             MainPage = new AppShell();
